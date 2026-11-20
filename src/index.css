@@ -1,0 +1,91 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --forest-green: #145B3B;
+  --deep-green: #103D2A;
+  --soft-sage: #FFFFFF;
+  --cream: #FFFFFF;
+  --white: #FFFFFF;
+  --charcoal-green: #27372E;
+  --muted-gray: #68756E;
+
+  --color-slate-50: var(--white);
+  --color-slate-100: var(--white);
+  --color-slate-200: #DDE6DF;
+  --color-slate-300: #C7D3CA;
+  --color-slate-400: var(--muted-gray);
+  --color-slate-500: var(--muted-gray);
+  --color-slate-600: var(--charcoal-green);
+  --color-slate-700: var(--charcoal-green);
+  --color-slate-900: var(--deep-green);
+
+  --color-emerald-50: var(--white);
+  --color-emerald-600: var(--forest-green);
+  --color-emerald-700: var(--deep-green);
+}
+
+/* index.css */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  background: var(--white);
+  color: var(--charcoal-green);
+}
+
+/* Root container */
+#root {
+  min-height: 100vh;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Consistent brand color for every page heading */
+
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Buttons */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+

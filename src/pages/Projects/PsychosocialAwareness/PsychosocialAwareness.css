@@ -1,0 +1,741 @@
+ 
+/* =========================================
+   PSYCHOSOCIAL AWARENESS PROJECT
+========================================= */
+
+.psychosocial-awareness-page {
+  --pa-green: #145b3b;
+  --pa-dark: #0b3828;
+  --pa-gold: #d5a642;
+  --pa-cream: #f8f7f1;
+  --pa-text: #59645d;
+  --pa-heading: #173d2d;
+
+  color: var(--pa-heading);
+  overflow: hidden;
+}
+
+.pa-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.psychosocial-awareness-page .section-padding {
+  padding: 100px 0;
+}
+
+.pa-label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--pa-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* INTRODUCTION */
+
+.pa-intro {
+  background: white;
+}
+
+.pa-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.pa-intro-image {
+  position: relative;
+}
+
+.pa-intro-image > img {
+  display: block;
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.pa-image-card {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 310px;
+  padding: 20px 23px;
+  color: white;
+  background: var(--pa-green);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.pa-image-card svg {
+  flex-shrink: 0;
+  color: var(--pa-gold);
+}
+
+.pa-image-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pa-image-card strong {
+  font-size: 15px;
+}
+
+.pa-image-card span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.pa-intro-content h2,
+.pa-importance-content h2,
+.pa-activities-content h2,
+.pa-benefits-content h2 {
+  margin: 0 0 22px;
+  color: var(--pa-dark);
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.pa-intro-content h2 span,
+.pa-importance-content h2 span {
+  color: var(--pa-green);
+}
+
+.pa-intro-content p,
+.pa-importance-content > p,
+.pa-activities-content > p,
+.pa-benefits-content > p {
+  margin: 0 0 17px;
+  color: var(--pa-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.pa-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 15px;
+  padding: 15px 23px;
+  color: white;
+  background: var(--pa-green);
+  border: 1px solid var(--pa-green);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.pa-primary-btn:hover {
+  color: var(--pa-dark);
+  background: var(--pa-gold);
+  border-color: var(--pa-gold);
+  transform: translateY(-3px);
+}
+
+/* IMPORTANCE */
+
+.pa-importance {
+  background: var(--pa-cream);
+}
+
+.pa-importance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.pa-importance-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pa-importance-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--pa-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pa-importance-points svg {
+  flex-shrink: 0;
+  color: var(--pa-green);
+}
+
+.pa-importance-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+/* SECTION HEADING */
+
+.pa-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.pa-section-heading h2 {
+  margin: 0 0 17px;
+  color: var(--pa-dark);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.pa-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--pa-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* FOCUS AREAS */
+
+.pa-focus {
+  background: white;
+}
+
+.pa-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.pa-focus-card {
+  position: relative;
+  min-height: 270px;
+  padding: 32px 28px;
+  overflow: hidden;
+  background: var(--pa-cream);
+  border: 1px solid #e9ece7;
+  border-radius: 10px;
+  transition: 0.35s ease;
+}
+
+.pa-focus-card:hover {
+  background: white;
+  border-color: var(--pa-gold);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(15, 59, 40, 0.08);
+}
+
+.pa-focus-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #e3eae3;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.pa-focus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 25px;
+  color: var(--pa-green);
+  background: white;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.pa-focus-card:hover .pa-focus-icon {
+  color: white;
+  background: var(--pa-green);
+}
+
+.pa-focus-card h3 {
+  margin: 0 0 12px;
+  color: var(--pa-dark);
+  font-size: 19px;
+}
+
+.pa-focus-card p {
+  margin: 0;
+  color: var(--pa-text);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.pa-focus-line {
+  width: 35px;
+  height: 3px;
+  margin-top: 22px;
+  background: var(--pa-gold);
+  transition: width 0.3s ease;
+}
+
+.pa-focus-card:hover .pa-focus-line {
+  width: 75px;
+}
+
+/* ACTIVITIES */
+
+.pa-activities {
+  background: var(--pa-cream);
+}
+
+.pa-activities-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.pa-activities-image img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.pa-activity-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.pa-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.pa-activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: var(--pa-green);
+  background: white;
+  border-radius: 9px;
+}
+
+.pa-activity-item h3 {
+  margin: 0 0 7px;
+  color: var(--pa-dark);
+  font-size: 16px;
+}
+
+.pa-activity-item p {
+  margin: 0;
+  color: var(--pa-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* APPROACH */
+
+.pa-approach {
+  background: white;
+}
+
+.pa-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pa-approach-card {
+  position: relative;
+  padding: 30px 24px;
+  background: var(--pa-cream);
+  border: 1px solid #e9ece7;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.pa-approach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(15, 59, 40, 0.07);
+}
+
+.pa-approach-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e3eae3;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.pa-approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  color: var(--pa-green);
+  background: white;
+  border-radius: 50%;
+}
+
+.pa-approach-card h3 {
+  margin: 0 0 12px;
+  color: var(--pa-dark);
+  font-size: 17px;
+}
+
+.pa-approach-card p {
+  margin: 0;
+  color: var(--pa-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* BENEFITS */
+
+.pa-benefits {
+  background: var(--pa-cream);
+}
+
+.pa-benefits-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.pa-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--pa-green);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.pa-text-link:hover {
+  color: #b18426;
+}
+
+.pa-benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.pa-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 78px;
+  padding: 18px;
+  background: white;
+  border-radius: 7px;
+}
+
+.pa-benefit-item svg {
+  flex-shrink: 0;
+  color: var(--pa-green);
+}
+
+.pa-benefit-item span {
+  color: var(--pa-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* COMMUNITY MESSAGE */
+
+.pa-message {
+  background: white;
+}
+
+.pa-message-inner {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 65px 45px;
+  text-align: center;
+  background: var(--pa-cream);
+  border-radius: 14px;
+}
+
+.pa-message-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 23px;
+  color: var(--pa-dark);
+  background: var(--pa-gold);
+  border-radius: 50%;
+}
+
+.pa-message-inner > span {
+  color: var(--pa-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pa-message-inner h2 {
+  max-width: 650px;
+  margin: 18px auto;
+  color: var(--pa-dark);
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.2;
+}
+
+.pa-message-inner > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--pa-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.pa-message-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 27px;
+  color: var(--pa-green);
+}
+
+.pa-message-decoration span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pa-message-decoration svg {
+  color: var(--pa-gold);
+}
+
+/* CALL TO ACTION */
+
+.pa-cta {
+  color: white;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 48, 32, 0.97),
+      rgba(20, 91, 59, 0.93)
+    ),
+    url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+}
+
+.pa-cta-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pa-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  color: var(--pa-dark);
+  background: var(--pa-gold);
+  border-radius: 50%;
+}
+
+.pa-cta-content > span {
+  color: var(--pa-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pa-cta-content h2 {
+  margin: 18px 0;
+  color: white;
+  font-size: clamp(30px, 4.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.pa-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.pa-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.pa-cta-primary,
+.pa-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid var(--pa-gold);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.pa-cta-primary {
+  color: var(--pa-dark);
+  background: var(--pa-gold);
+}
+
+.pa-cta-primary:hover {
+  color: white;
+  background: transparent;
+}
+
+.pa-cta-secondary {
+  color: white;
+  background: transparent;
+}
+
+.pa-cta-secondary:hover {
+  color: var(--pa-dark);
+  background: white;
+  border-color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .pa-intro-grid,
+  .pa-importance-grid,
+  .pa-activities-grid {
+    gap: 45px;
+  }
+
+  .pa-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pa-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pa-benefits-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  .psychosocial-awareness-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .pa-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .pa-intro-grid,
+  .pa-importance-grid,
+  .pa-activities-grid,
+  .pa-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .pa-intro-image > img,
+  .pa-importance-image img {
+    height: 350px;
+  }
+
+  .pa-activities-image img {
+    height: 380px;
+  }
+
+  .pa-image-card {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .pa-benefits-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .pa-focus-grid,
+  .pa-approach-grid,
+  .pa-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .pa-focus-card {
+    min-height: auto;
+  }
+
+  .pa-intro-content h2,
+  .pa-importance-content h2,
+  .pa-activities-content h2,
+  .pa-benefits-content h2 {
+    font-size: 31px;
+  }
+
+  .pa-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .pa-message-inner {
+    padding: 45px 22px;
+  }
+
+  .pa-message-inner h2 {
+    font-size: 30px;
+  }
+
+  .pa-message-decoration {
+    gap: 7px;
+  }
+
+  .pa-message-decoration span {
+    font-size: 11px;
+  }
+
+  .pa-cta-actions {
+    flex-direction: column;
+  }
+
+  .pa-cta-primary,
+  .pa-cta-secondary {
+    width: 100%;
+  }
+}

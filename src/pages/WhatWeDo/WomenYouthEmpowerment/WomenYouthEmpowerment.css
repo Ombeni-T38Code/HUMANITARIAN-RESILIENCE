@@ -1,0 +1,697 @@
+
+/* =========================================
+   WOMEN & YOUTH EMPOWERMENT PAGE
+========================================= */
+
+.women-empowerment-page {
+  --women-green: #145b3b;
+  --women-dark: #0b3828;
+  --women-gold: #d5a642;
+  --women-cream: #f8f7f1;
+  --women-text: #59645d;
+  --women-heading: #173d2d;
+  --women-white: #ffffff;
+
+  color: var(--women-heading);
+  overflow: hidden;
+}
+
+.women-empowerment-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.women-empowerment-page .section-padding {
+  padding: 100px 0;
+}
+
+.women-empowerment-label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--women-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.women-empowerment-intro {
+  background: var(--women-white);
+}
+
+.women-empowerment-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.women-empowerment-intro-image {
+  position: relative;
+  min-height: 490px;
+}
+
+.women-empowerment-intro-image > img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.women-empowerment-image-label {
+  position: absolute;
+  right: -25px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  padding: 20px 23px;
+  color: white;
+  background: var(--women-green);
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.16);
+}
+
+.women-empowerment-image-label > svg {
+  flex-shrink: 0;
+  color: var(--women-gold);
+}
+
+.women-empowerment-image-label div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.women-empowerment-image-label strong {
+  font-size: 15px;
+}
+
+.women-empowerment-image-label span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+}
+
+.women-empowerment-intro-content h2,
+.women-empowerment-feature-content h2,
+.women-empowerment-outcomes-content h2 {
+  margin: 0 0 22px;
+  color: var(--women-dark);
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.women-empowerment-intro-content h2 span,
+.women-empowerment-feature-content h2 span {
+  color: var(--women-green);
+}
+
+.women-empowerment-intro-content p,
+.women-empowerment-feature-content > p,
+.women-empowerment-outcomes-content > p {
+  margin: 0 0 17px;
+  color: var(--women-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.women-empowerment-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  padding: 15px 23px;
+  color: white;
+  background: var(--women-green);
+  border: 1px solid var(--women-green);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.women-empowerment-btn:hover {
+  color: var(--women-dark);
+  background: var(--women-gold);
+  border-color: var(--women-gold);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.women-empowerment-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.women-empowerment-section-heading h2 {
+  margin: 0 0 17px;
+  color: var(--women-dark);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.women-empowerment-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--women-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   EMPOWERMENT AREAS
+========================================= */
+
+.women-empowerment-areas {
+  background: var(--women-cream);
+}
+
+.women-empowerment-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.women-empowerment-area-card {
+  position: relative;
+  min-height: 270px;
+  padding: 32px 28px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 10px;
+  transition: 0.35s ease;
+}
+
+.women-empowerment-area-card:hover {
+  border-color: var(--women-gold);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 45px rgba(15, 59, 40, 0.08);
+}
+
+.women-empowerment-area-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 25px;
+  color: var(--women-green);
+  background: #edf5ef;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.women-empowerment-area-card:hover
+.women-empowerment-area-icon {
+  color: white;
+  background: var(--women-green);
+}
+
+.women-empowerment-card-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #e9eee9;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.women-empowerment-area-card h3 {
+  margin: 0 0 12px;
+  color: var(--women-dark);
+  font-size: 19px;
+}
+
+.women-empowerment-area-card p {
+  margin: 0;
+  color: var(--women-text);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.women-empowerment-card-line {
+  width: 35px;
+  height: 3px;
+  margin-top: 22px;
+  background: var(--women-gold);
+  transition: width 0.3s ease;
+}
+
+.women-empowerment-area-card:hover
+.women-empowerment-card-line {
+  width: 75px;
+}
+
+/* =========================================
+   SOAP MAKING FEATURE
+========================================= */
+
+.women-empowerment-feature {
+  background: white;
+}
+
+.women-empowerment-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.women-empowerment-feature-content h2 {
+  font-size: clamp(30px, 3.8vw, 40px);
+}
+
+.women-empowerment-feature-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.women-empowerment-feature-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--women-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.women-empowerment-feature-points svg {
+  flex-shrink: 0;
+  color: var(--women-green);
+}
+
+.women-empowerment-feature-image {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.women-empowerment-feature-image > img {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.women-empowerment-impact-card {
+  position: absolute;
+  right: -22px;
+  bottom: 0;
+  width: min(370px, 90%);
+  padding: 25px;
+  color: white;
+  background: var(--women-dark);
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.women-empowerment-impact-card > span {
+  color: var(--women-gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.women-empowerment-impact-numbers {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 18px 0;
+}
+
+.women-empowerment-impact-numbers div:not(
+  .women-empowerment-impact-divider
+) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.women-empowerment-impact-numbers strong {
+  color: var(--women-gold);
+  font-size: 38px;
+  line-height: 1;
+}
+
+.women-empowerment-impact-numbers small {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.women-empowerment-impact-divider {
+  width: 1px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.women-empowerment-impact-card > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   OUR APPROACH
+========================================= */
+
+.women-empowerment-approach {
+  background: var(--women-cream);
+}
+
+.women-empowerment-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.women-empowerment-step {
+  position: relative;
+  padding: 30px 24px;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.women-empowerment-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(15, 59, 40, 0.07);
+}
+
+.women-empowerment-step-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e8eee9;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.women-empowerment-step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  color: var(--women-green);
+  background: #edf5ef;
+  border-radius: 50%;
+}
+
+.women-empowerment-step h3 {
+  margin: 0 0 12px;
+  color: var(--women-dark);
+  font-size: 17px;
+}
+
+.women-empowerment-step p {
+  margin: 0;
+  color: var(--women-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   EXPECTED OUTCOMES
+========================================= */
+
+.women-empowerment-outcomes {
+  background: white;
+}
+
+.women-empowerment-outcomes-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.women-empowerment-outcomes-content h2 {
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.women-empowerment-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--women-green);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.women-empowerment-text-link:hover {
+  color: #b18426;
+}
+
+.women-empowerment-outcomes-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.women-empowerment-outcome-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 78px;
+  padding: 18px;
+  background: var(--women-cream);
+  border-radius: 7px;
+}
+
+.women-empowerment-outcome-item svg {
+  flex-shrink: 0;
+  color: var(--women-green);
+}
+
+.women-empowerment-outcome-item span {
+  color: var(--women-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.women-empowerment-cta {
+  position: relative;
+  color: white;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 48, 32, 0.97),
+      rgba(20, 91, 59, 0.93)
+    ),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+}
+
+.women-empowerment-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.women-empowerment-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  color: var(--women-dark);
+  background: var(--women-gold);
+  border-radius: 50%;
+}
+
+.women-empowerment-cta-content > span {
+  color: var(--women-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.women-empowerment-cta-content h2 {
+  margin: 18px 0;
+  color: white;
+  font-size: clamp(30px, 4.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.women-empowerment-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.women-empowerment-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.women-empowerment-cta-btn,
+.women-empowerment-cta-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid var(--women-gold);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.women-empowerment-cta-btn {
+  color: var(--women-dark);
+  background: var(--women-gold);
+}
+
+.women-empowerment-cta-btn:hover {
+  color: white;
+  background: transparent;
+}
+
+.women-empowerment-cta-outline {
+  color: white;
+  background: transparent;
+}
+
+.women-empowerment-cta-outline:hover {
+  color: var(--women-dark);
+  background: white;
+  border-color: white;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+  .women-empowerment-intro-grid,
+  .women-empowerment-feature-grid {
+    gap: 45px;
+  }
+
+  .women-empowerment-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .women-empowerment-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .women-empowerment-outcomes-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  .women-empowerment-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .women-empowerment-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .women-empowerment-intro-grid,
+  .women-empowerment-feature-grid,
+  .women-empowerment-outcomes-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .women-empowerment-intro-image,
+  .women-empowerment-intro-image > img {
+    min-height: 350px;
+    height: 350px;
+  }
+
+  .women-empowerment-image-label {
+    right: 12px;
+    bottom: 15px;
+  }
+
+  .women-empowerment-feature-image > img {
+    height: 380px;
+  }
+
+  .women-empowerment-impact-card {
+    right: 10px;
+  }
+
+  .women-empowerment-outcomes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .women-empowerment-areas-grid,
+  .women-empowerment-steps,
+  .women-empowerment-outcomes-list {
+    grid-template-columns: 1fr;
+  }
+
+  .women-empowerment-area-card {
+    min-height: auto;
+  }
+
+  .women-empowerment-intro-content h2,
+  .women-empowerment-feature-content h2,
+  .women-empowerment-outcomes-content h2 {
+    font-size: 31px;
+  }
+
+  .women-empowerment-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .women-empowerment-feature-image > img {
+    height: 300px;
+  }
+
+  .women-empowerment-impact-card {
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
+
+  .women-empowerment-cta-actions {
+    flex-direction: column;
+  }
+
+  .women-empowerment-cta-btn,
+  .women-empowerment-cta-outline {
+    width: 100%;
+  }
+}

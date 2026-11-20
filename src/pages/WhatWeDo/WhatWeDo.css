@@ -1,0 +1,510 @@
+
+/* =========================================
+   WHAT WE DO PAGE
+========================================= */
+
+.whatwedo-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.whatwedo-container {
+  width: min(calc(100% - 48px), 1240px);
+  margin: 0 auto;
+}
+
+.whatwedo-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #145b3b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.whatwedo-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.whatwedo-intro .whatwedo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.whatwedo-intro-text h2 {
+  max-width: 620px;
+  margin-bottom: 23px;
+  color: #092f22;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.25;
+}
+
+.whatwedo-intro-text h2 span {
+  color: #145b3b;
+}
+
+.whatwedo-intro-text p {
+  margin-bottom: 17px;
+  color: #69786f;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.whatwedo-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  color: #145b3b;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.whatwedo-text-link:hover {
+  gap: 17px;
+}
+
+.whatwedo-intro-image {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.whatwedo-intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whatwedo-image-caption {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 6px;
+  background: rgba(9, 47, 34, 0.93);
+  color: #ffffff;
+}
+
+.whatwedo-image-caption > svg {
+  flex-shrink: 0;
+  color: #e4bb61;
+}
+
+.whatwedo-image-caption strong,
+.whatwedo-image-caption span {
+  display: block;
+}
+
+.whatwedo-image-caption strong {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.whatwedo-image-caption span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+}
+
+/* =========================================
+   PROGRAM SECTION
+========================================= */
+
+.whatwedo-programs {
+  padding: 100px 0;
+  background: #f8f7f1;
+}
+
+.whatwedo-section-heading {
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.whatwedo-section-heading h2 {
+  margin-bottom: 17px;
+  color: #092f22;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 44px);
+}
+
+.whatwedo-section-heading p {
+  color: #69786f;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.whatwedo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.whatwedo-card {
+  display: flex;
+  min-height: 365px;
+  flex-direction: column;
+  padding: 25px 23px;
+  border: 1px solid #e5eae5;
+  border-radius: 9px;
+  background: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.whatwedo-card:hover {
+  transform: translateY(-7px);
+  border-color: #b6cdbb;
+  box-shadow: 0 18px 40px rgba(9, 47, 34, 0.09);
+}
+
+.whatwedo-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.whatwedo-card-number {
+  color: #d5a642;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.whatwedo-icon {
+  display: flex;
+  width: 57px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eaf1eb;
+  color: #145b3b;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.whatwedo-card:hover .whatwedo-icon {
+  background: #145b3b;
+  color: #ffffff;
+}
+
+.whatwedo-card-label {
+  margin-bottom: 9px;
+  color: #9a792e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.whatwedo-card h3 {
+  min-height: 55px;
+  margin-bottom: 12px;
+  color: #092f22;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.whatwedo-card p {
+  flex: 1;
+  margin-bottom: 23px;
+  color: #69786f;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.whatwedo-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  padding-top: 15px;
+  border-top: 1px solid #e7ece7;
+  color: #145b3b;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.whatwedo-card-link:hover {
+  gap: 15px;
+}
+
+/* =========================================
+   OUR APPROACH
+========================================= */
+
+.whatwedo-approach {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.whatwedo-approach-heading {
+  max-width: 760px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.whatwedo-approach-heading h2 {
+  margin-bottom: 18px;
+  color: #092f22;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 43px);
+  line-height: 1.3;
+}
+
+.whatwedo-approach-heading h2 span {
+  color: #145b3b;
+}
+
+.whatwedo-approach-heading p {
+  color: #69786f;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.whatwedo-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.whatwedo-approach-card {
+  padding: 30px 24px;
+  border: 1px solid #e7ece7;
+  border-radius: 8px;
+  background: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.whatwedo-approach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(9, 47, 34, 0.08);
+}
+
+.whatwedo-approach-icon {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 23px;
+  border-radius: 8px;
+  background: #eaf1eb;
+  color: #145b3b;
+}
+
+.whatwedo-approach-card h3 {
+  margin-bottom: 12px;
+  color: #092f22;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.whatwedo-approach-card p {
+  color: #69786f;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.whatwedo-cta {
+  padding: 90px 0;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(6, 39, 28, 0.96),
+      rgba(20, 91, 59, 0.93)
+    );
+  text-align: center;
+}
+
+.whatwedo-cta-content {
+  max-width: 850px;
+}
+
+.whatwedo-cta-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  border: 1px solid rgba(228, 187, 97, 0.5);
+  border-radius: 50%;
+  color: #e4bb61;
+}
+
+.whatwedo-cta .whatwedo-eyebrow {
+  color: #e4bb61;
+}
+
+.whatwedo-cta h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4.5vw, 48px);
+  line-height: 1.25;
+}
+
+.whatwedo-cta h2 span {
+  color: #e4bb61;
+}
+
+.whatwedo-cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.whatwedo-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.whatwedo-primary-btn,
+.whatwedo-secondary-btn {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.whatwedo-primary-btn {
+  background: #d5a642;
+  color: #092f22;
+}
+
+.whatwedo-primary-btn:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+}
+
+.whatwedo-secondary-btn {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #ffffff;
+}
+
+.whatwedo-secondary-btn:hover {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #145b3b;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .whatwedo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatwedo-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatwedo-intro .whatwedo-container {
+    gap: 40px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .whatwedo-container {
+    width: calc(100% - 36px);
+  }
+
+  .whatwedo-intro,
+  .whatwedo-programs,
+  .whatwedo-approach,
+  .whatwedo-cta {
+    padding: 70px 0;
+  }
+
+  .whatwedo-intro .whatwedo-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .whatwedo-intro-image {
+    height: 330px;
+  }
+
+  .whatwedo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whatwedo-card {
+    min-height: auto;
+  }
+
+  .whatwedo-card h3 {
+    min-height: auto;
+  }
+
+  .whatwedo-approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .whatwedo-container {
+    width: calc(100% - 30px);
+  }
+
+  .whatwedo-cta-buttons {
+    flex-direction: column;
+  }
+
+  .whatwedo-primary-btn,
+  .whatwedo-secondary-btn {
+    width: 100%;
+  }
+}
+    

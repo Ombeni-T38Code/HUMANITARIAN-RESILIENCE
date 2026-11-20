@@ -1,0 +1,100 @@
+.section {
+  padding: 110px 0;
+  background: #eaf3ed;
+}
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.heading {
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.heading > span,
+.eyebrow {
+  color: #145b3b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  margin: 14px 0 18px;
+  color: #17231c;
+  font: 700 clamp(36px, 4.7vw, 56px)/1.13 'Playfair Display', Georgia, serif;
+}
+
+.heading h2 em {
+  color: #145b3b;
+  font-style: normal;
+}
+
+.heading p {
+  color: #68766e;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 23px;
+  padding: 29px;
+  border-radius: 18px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 65px rgba(8, 45, 28, 0.1);
+}
+
+.number {
+  flex: 0 0 auto;
+  color: #d9aa57;
+  font: 700 35px/1 'Playfair Display', Georgia, serif;
+}
+
+.card h3 {
+  margin: 0 0 9px;
+  color: #0b3d29;
+  font-size: 17px;
+}
+
+.card p {
+  margin: 0;
+  color: #68766e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    gap: 17px;
+    padding: 23px;
+  }
+}

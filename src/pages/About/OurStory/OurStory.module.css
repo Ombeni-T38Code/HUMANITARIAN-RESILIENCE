@@ -1,0 +1,142 @@
+.section {
+  padding: 110px 0;
+  overflow: hidden;
+  background: #f8f7f1;
+}
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+  gap: 80px;
+}
+
+.intro {
+  position: sticky;
+  top: 50px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 20px;
+  color: #145b3b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 30px;
+  height: 2px;
+  background: #d9aa57;
+  content: '';
+}
+
+.intro h2 {
+  margin: 0 0 20px;
+  color: #17231c;
+  font: 700 clamp(36px, 4.7vw, 56px)/1.13 'Playfair Display', Georgia, serif;
+  letter-spacing: -1.3px;
+}
+
+.intro h2 span {
+  color: #145b3b;
+}
+
+.intro p,
+.step p {
+  color: #68766e;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.intro blockquote {
+  margin-top: 35px;
+  padding: 24px;
+  border-left: 3px solid #d9aa57;
+  border-radius: 0 15px 15px 0;
+  background: #fff;
+  color: #0b3d29;
+  font: 600 20px/1.5 'Playfair Display', Georgia, serif;
+}
+
+.steps {
+  display: grid;
+  gap: 18px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  align-items: start;
+  gap: 22px;
+  padding: 27px;
+  border: 1px solid #e5eae5;
+  border-radius: 18px;
+  background: #fff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.step:hover {
+  transform: translateX(8px);
+  border-color: #b6d77d;
+  box-shadow: 0 22px 65px rgba(8, 45, 28, 0.1);
+}
+
+.number {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border-radius: 16px;
+  background: #eaf3ed;
+  color: #145b3b;
+  font: 700 23px 'Playfair Display', Georgia, serif;
+}
+
+.step h3 {
+  margin: 3px 0 8px;
+  color: #0b3d29;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .intro {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .step {
+    grid-template-columns: 48px 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .number {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

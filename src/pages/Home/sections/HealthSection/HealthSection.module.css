@@ -1,0 +1,124 @@
+/* =========================================
+   HRA HEALTH SECTION
+========================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 48px;
+  align-items: center;
+}
+
+/* =========================================
+   SECTION IMAGE
+========================================= */
+
+.image {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #EAF3ED;
+  box-shadow: 0 12px 30px rgba(16, 61, 42, 0.08);
+}
+
+/* =========================================
+   CONTENT COLUMN
+========================================= */
+
+.content h2 {
+  margin: 10px 0 16px;
+  color: #103D2A;
+  font-size: clamp(28px, 3.4vw, 38px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+}
+
+.content > p {
+  margin: 0 0 28px;
+  color: #68756E;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FEATURES GRID (2x2)
+========================================= */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  background: #FFFFFF;
+  border: 1px solid #EAF3ED;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(16, 61, 42, 0.04);
+}
+
+.feature svg {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #EAF3ED;
+  color: #145B3B;
+}
+
+.feature h4 {
+  margin: 0 0 4px;
+  color: #103D2A;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.feature p {
+  margin: 0;
+  color: #68756E;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .image {
+    height: 360px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+  .image {
+    height: 250px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .feature {
+    padding: 16px;
+  }
+}

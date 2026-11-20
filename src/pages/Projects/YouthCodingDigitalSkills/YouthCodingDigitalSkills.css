@@ -1,0 +1,781 @@
+
+.ycd-page {
+  --ycd-green: #145b3b;
+  --ycd-dark: #103d2b;
+  --ycd-gold: #d6a743;
+  --ycd-cream: #f8f6ef;
+  --ycd-text: #5f6b63;
+  color: #183b2b;
+  overflow: hidden;
+}
+
+.ycd-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.ycd-section {
+  padding: 100px 0;
+}
+
+.ycd-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--ycd-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ycd-section-heading {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.ycd-section-heading h2,
+.ycd-intro-content h2,
+.ycd-journey-content h2,
+.ycd-benefits-heading h2 {
+  margin: 0 0 18px;
+  color: var(--ycd-dark);
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.ycd-section-heading p,
+.ycd-intro-content p,
+.ycd-journey-content > p,
+.ycd-benefits-heading p {
+  color: var(--ycd-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* INTRODUCTION */
+
+.ycd-intro {
+  background: #fff;
+}
+
+.ycd-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.ycd-intro-content h2 span {
+  display: block;
+  color: var(--ycd-green);
+}
+
+.ycd-intro-content p {
+  margin-bottom: 18px;
+}
+
+.ycd-button,
+.ycd-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 5px;
+  background: var(--ycd-green);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.ycd-button:hover {
+  background: var(--ycd-dark);
+  transform: translateY(-3px);
+}
+
+.ycd-intro-content .ycd-button {
+  margin-top: 15px;
+}
+
+.ycd-intro-visual {
+  position: relative;
+  min-height: 490px;
+}
+
+.ycd-intro-visual > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 430px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #e9eee8;
+}
+
+.ycd-floating-card {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: min(330px, 90%);
+  padding: 23px;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 15px 45px rgba(20, 55, 35, 0.13);
+}
+
+.ycd-floating-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  background: #edf4ed;
+  color: var(--ycd-green);
+}
+
+.ycd-floating-card strong,
+.ycd-floating-card span {
+  display: block;
+}
+
+.ycd-floating-card strong {
+  margin-bottom: 6px;
+  color: var(--ycd-dark);
+  font-size: 14px;
+}
+
+.ycd-floating-card span {
+  color: var(--ycd-text);
+  font-size: 12px;
+}
+
+.ycd-decoration {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--ycd-gold);
+  opacity: 0.3;
+}
+
+/* IMPORTANCE */
+
+.ycd-importance {
+  background: var(--ycd-cream);
+}
+
+.ycd-importance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.ycd-importance-card {
+  padding: 35px 30px;
+  border: 1px solid #e8e9df;
+  border-radius: 9px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.ycd-importance-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20, 55, 35, 0.08);
+}
+
+.ycd-icon-box {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  background: #edf4ed;
+  color: var(--ycd-green);
+}
+
+.ycd-importance-card h3,
+.ycd-skill-card h3,
+.ycd-practical-card h3,
+.ycd-goal-card h3 {
+  margin: 0 0 12px;
+  color: var(--ycd-dark);
+  font-size: 19px;
+}
+
+.ycd-importance-card p,
+.ycd-skill-card p,
+.ycd-practical-card p,
+.ycd-goal-card p {
+  margin: 0;
+  color: var(--ycd-text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* SKILLS */
+
+.ycd-skills {
+  background: #fff;
+}
+
+.ycd-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.ycd-skill-card {
+  padding: 28px;
+  border: 1px solid #e9ede7;
+  border-radius: 9px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.ycd-skill-card:hover {
+  border-color: var(--ycd-gold);
+  transform: translateY(-6px);
+}
+
+.ycd-skill-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.ycd-skill-top > span {
+  color: #d4dcd4;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.ycd-skill-top .ycd-icon-box {
+  width: 49px;
+  height: 49px;
+  margin: 0;
+}
+
+/* LEARNING JOURNEY */
+
+.ycd-journey {
+  background: var(--ycd-cream);
+}
+
+.ycd-journey-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.ycd-journey-list {
+  margin-top: 30px;
+}
+
+.ycd-journey-item {
+  display: flex;
+  gap: 18px;
+  padding: 19px 0;
+  border-bottom: 1px solid #e3e5dc;
+}
+
+.ycd-journey-number {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--ycd-green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ycd-journey-item h3 {
+  margin: 2px 0 7px;
+  color: var(--ycd-dark);
+  font-size: 17px;
+}
+
+.ycd-journey-item p {
+  margin: 0;
+  color: var(--ycd-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ycd-journey-visual {
+  position: relative;
+  height: 550px;
+}
+
+.ycd-journey-visual > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ycd-code-card {
+  position: absolute;
+  right: -20px;
+  bottom: 25px;
+  width: min(360px, 95%);
+  padding: 20px;
+  border: 1px solid #263d32;
+  border-radius: 9px;
+  background: #10261d;
+  box-shadow: 0 15px 35px rgba(16, 38, 29, 0.25);
+}
+
+.ycd-code-heading {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #344c40;
+}
+
+.ycd-code-heading > span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #d6a743;
+}
+
+.ycd-code-heading small {
+  margin-left: 10px;
+  color: #b8c8bc;
+  font-size: 11px;
+}
+
+.ycd-code-card pre {
+  margin: 18px 0 0;
+  overflow-x: auto;
+  color: #e5efe7;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.ycd-code-purple {
+  color: #c792ea;
+}
+
+.ycd-code-yellow {
+  color: #ffcb6b;
+}
+
+.ycd-code-green {
+  color: #c3e88d;
+}
+
+/* PRACTICAL LEARNING */
+
+.ycd-practical {
+  background: #fff;
+}
+
+.ycd-practical-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ycd-practical-card {
+  padding: 30px 24px;
+  border: 1px solid #e9ede7;
+  border-radius: 9px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.ycd-practical-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--ycd-gold);
+}
+
+.ycd-practical-icon {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  background: #edf4ed;
+  color: var(--ycd-green);
+}
+
+/* BENEFITS */
+
+.ycd-benefits {
+  background: var(--ycd-cream);
+}
+
+.ycd-benefits-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.ycd-benefits-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.ycd-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px;
+  border-radius: 7px;
+  background: #fff;
+  color: #354c3e;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.ycd-benefit-item svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--ycd-green);
+}
+
+/* DIGITAL SAFETY */
+
+.ycd-safety {
+  background: #fff;
+}
+
+.ycd-safety-inner {
+  display: grid;
+  grid-template-columns: auto 1fr 0.8fr;
+  align-items: center;
+  gap: 30px;
+  padding: 45px;
+  border-radius: 12px;
+  background: var(--ycd-dark);
+  color: #fff;
+}
+
+.ycd-safety-icon {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--ycd-gold);
+}
+
+.ycd-safety .ycd-label {
+  color: var(--ycd-gold);
+}
+
+.ycd-safety h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.ycd-safety-inner > div:nth-child(2) p {
+  margin: 0;
+  color: #d3e0d7;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ycd-safety-points {
+  display: grid;
+  gap: 13px;
+}
+
+.ycd-safety-points span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e5eee8;
+  font-size: 13px;
+}
+
+.ycd-safety-points svg {
+  flex-shrink: 0;
+  color: var(--ycd-gold);
+}
+
+/* GOALS */
+
+.ycd-goals {
+  background: var(--ycd-cream);
+}
+
+.ycd-goals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.ycd-goal-card {
+  padding: 35px;
+  border-radius: 9px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.ycd-goal-card:hover {
+  transform: translateY(-6px);
+}
+
+.ycd-goal-card > svg {
+  margin-bottom: 20px;
+  color: var(--ycd-green);
+}
+
+/* RELATED PROGRAM */
+
+.ycd-related {
+  padding: 70px 0;
+  background: #fff;
+}
+
+.ycd-related-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.ycd-related-inner > div {
+  max-width: 650px;
+}
+
+.ycd-related-inner h2 {
+  margin: 0 0 12px;
+  color: var(--ycd-dark);
+  font-size: 30px;
+}
+
+.ycd-related-inner p {
+  margin: 0;
+  color: var(--ycd-text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.ycd-outline-button {
+  flex-shrink: 0;
+  border: 1px solid var(--ycd-green);
+  background: transparent;
+  color: var(--ycd-green);
+}
+
+.ycd-outline-button:hover {
+  background: var(--ycd-green);
+  color: #fff;
+}
+
+/* CTA */
+
+.ycd-cta {
+  padding: 85px 0;
+  background: var(--ycd-dark);
+  color: #fff;
+}
+
+.ycd-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.ycd-cta .ycd-label {
+  color: var(--ycd-gold);
+}
+
+.ycd-cta h2 {
+  max-width: 650px;
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+}
+
+.ycd-cta p {
+  max-width: 650px;
+  margin: 0;
+  color: #d3e0d7;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.ycd-cta-actions {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ycd-button-light {
+  background: #fff;
+  color: var(--ycd-dark);
+}
+
+.ycd-button-light:hover {
+  background: #edf4ed;
+  color: var(--ycd-dark);
+}
+
+.ycd-button-gold {
+  background: var(--ycd-gold);
+  color: var(--ycd-dark);
+}
+
+.ycd-button-gold:hover {
+  background: #e7bb5d;
+  color: var(--ycd-dark);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .ycd-intro-grid,
+  .ycd-journey-grid {
+    gap: 40px;
+  }
+
+  .ycd-practical-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ycd-benefits-grid {
+    gap: 40px;
+  }
+
+  .ycd-safety-inner {
+    grid-template-columns: auto 1fr;
+  }
+
+  .ycd-safety-points {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .ycd-section {
+    padding: 70px 0;
+  }
+
+  .ycd-intro-grid,
+  .ycd-journey-grid,
+  .ycd-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ycd-intro-visual {
+    min-height: 420px;
+  }
+
+  .ycd-intro-visual > img {
+    height: 370px;
+  }
+
+  .ycd-importance-grid,
+  .ycd-goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ycd-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ycd-journey-visual {
+    height: 440px;
+  }
+
+  .ycd-safety-inner {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .ycd-safety-points {
+    grid-column: auto;
+  }
+
+  .ycd-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ycd-related-inner,
+  .ycd-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ycd-cta-actions {
+    width: 100%;
+  }
+
+  .ycd-cta-actions .ycd-button {
+    width: 100%;
+  }
+
+  .ycd-code-card {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ycd-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+  .ycd-skills-grid,
+  .ycd-practical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ycd-intro-visual {
+    min-height: 360px;
+  }
+
+  .ycd-intro-visual > img {
+    width: 94%;
+    height: 310px;
+  }
+
+  .ycd-floating-card {
+    padding: 16px;
+  }
+
+  .ycd-journey-visual {
+    height: 350px;
+  }
+
+  .ycd-code-card {
+    bottom: 10px;
+    padding: 15px;
+  }
+
+  .ycd-related-inner h2 {
+    font-size: 26px;
+  }
+}

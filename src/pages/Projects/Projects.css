@@ -1,0 +1,649 @@
+
+/* =========================================
+   HRA PROJECTS PAGE
+========================================= */
+
+.hra-projects-page {
+  --projects-green: #145b3b;
+  --projects-dark: #0b3828;
+  --projects-gold: #d5a642;
+  --projects-cream: #f8f7f1;
+  --projects-text: #59645d;
+  --projects-heading: #173d2d;
+  --projects-white: #ffffff;
+
+  color: var(--projects-heading);
+  overflow: hidden;
+}
+
+.hra-projects-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.hra-projects-page .section-padding {
+  padding: 100px 0;
+}
+
+.hra-projects-label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--projects-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.hra-projects-intro {
+  background: white;
+}
+
+.hra-projects-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.hra-projects-intro-content h2,
+.hra-projects-feature-content h2 {
+  margin: 0 0 22px;
+  color: var(--projects-dark);
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.hra-projects-intro-content h2 span,
+.hra-projects-feature-content h2 span {
+  color: var(--projects-green);
+}
+
+.hra-projects-intro-content p,
+.hra-projects-feature-content > p {
+  margin: 0 0 17px;
+  color: var(--projects-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.hra-projects-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 15px;
+  padding: 15px 23px;
+  color: white;
+  background: var(--projects-green);
+  border: 1px solid var(--projects-green);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hra-projects-primary-btn:hover {
+  color: var(--projects-dark);
+  background: var(--projects-gold);
+  border-color: var(--projects-gold);
+  transform: translateY(-3px);
+}
+
+.hra-projects-intro-image {
+  position: relative;
+}
+
+.hra-projects-intro-image > img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.hra-projects-image-caption {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 300px;
+  padding: 20px 23px;
+  color: white;
+  background: var(--projects-green);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.hra-projects-image-caption svg {
+  flex-shrink: 0;
+  color: var(--projects-gold);
+}
+
+.hra-projects-image-caption div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hra-projects-image-caption strong {
+  font-size: 15px;
+}
+
+.hra-projects-image-caption span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.hra-projects-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.hra-projects-section-heading h2 {
+  margin: 0 0 17px;
+  color: var(--projects-dark);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hra-projects-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--projects-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.hra-projects-list {
+  background: var(--projects-cream);
+}
+
+.hra-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.hra-project-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 11px;
+  transition: 0.35s ease;
+}
+
+.hra-project-card:hover {
+  border-color: var(--projects-gold);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(15, 59, 40, 0.09);
+}
+
+.hra-project-card-image {
+  position: relative;
+  display: block;
+  height: 225px;
+  overflow: hidden;
+}
+
+.hra-project-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.hra-project-card:hover .hra-project-card-image img {
+  transform: scale(1.07);
+}
+
+.hra-project-card-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: white;
+  background: var(--projects-green);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hra-project-featured-label {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 8px 11px;
+  color: var(--projects-dark);
+  background: var(--projects-gold);
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hra-project-card-content {
+  padding: 25px;
+}
+
+.hra-project-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.hra-project-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  color: var(--projects-green);
+  background: #edf5ef;
+  border-radius: 8px;
+}
+
+.hra-project-card-top > span {
+  color: var(--projects-green);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.hra-project-card-content h3 {
+  margin: 0 0 12px;
+  color: var(--projects-dark);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.hra-project-card-content > p {
+  min-height: 105px;
+  margin: 0;
+  color: var(--projects-text);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.hra-project-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+  padding-top: 16px;
+  color: var(--projects-green);
+  border-top: 1px solid #e9ece7;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hra-project-card-link:hover {
+  color: #b18426;
+  gap: 14px;
+}
+
+/* =========================================
+   FEATURED SOAP MAKING PROJECT
+========================================= */
+
+.hra-projects-feature {
+  background: white;
+}
+
+.hra-projects-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.hra-projects-feature-image {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.hra-projects-feature-image > img {
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.hra-projects-feature-stats {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  width: min(370px, 95%);
+  padding: 25px;
+  color: white;
+  background: var(--projects-dark);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.hra-projects-feature-stats > div:not(
+  .hra-projects-feature-divider
+) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hra-projects-feature-stats strong {
+  color: var(--projects-gold);
+  font-size: 37px;
+  line-height: 1;
+}
+
+.hra-projects-feature-stats span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.hra-projects-feature-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hra-projects-feature-content h2 {
+  font-size: clamp(30px, 3.8vw, 40px);
+}
+
+.hra-projects-feature-points {
+  display: grid;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.hra-projects-feature-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--projects-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hra-projects-feature-points svg {
+  flex-shrink: 0;
+  color: var(--projects-green);
+}
+
+/* =========================================
+   PROJECT VALUES
+========================================= */
+
+.hra-projects-values {
+  background: var(--projects-cream);
+}
+
+.hra-projects-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.hra-project-value-card {
+  padding: 30px 23px;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.hra-project-value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--projects-gold);
+  box-shadow: 0 15px 35px rgba(15, 59, 40, 0.07);
+}
+
+.hra-project-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 23px;
+  color: var(--projects-green);
+  background: #edf5ef;
+  border-radius: 9px;
+}
+
+.hra-project-value-card h3 {
+  margin: 0 0 12px;
+  color: var(--projects-dark);
+  font-size: 17px;
+}
+
+.hra-project-value-card p {
+  margin: 0;
+  color: var(--projects-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.hra-projects-cta {
+  color: white;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 48, 32, 0.97),
+      rgba(20, 91, 59, 0.93)
+    ),
+    url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+}
+
+.hra-projects-cta-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hra-projects-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  color: var(--projects-dark);
+  background: var(--projects-gold);
+  border-radius: 50%;
+}
+
+.hra-projects-cta-content > span {
+  color: var(--projects-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hra-projects-cta-content h2 {
+  margin: 18px 0;
+  color: white;
+  font-size: clamp(30px, 4.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hra-projects-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.hra-projects-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.hra-projects-cta-primary,
+.hra-projects-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid var(--projects-gold);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hra-projects-cta-primary {
+  color: var(--projects-dark);
+  background: var(--projects-gold);
+}
+
+.hra-projects-cta-primary:hover {
+  color: white;
+  background: transparent;
+}
+
+.hra-projects-cta-secondary {
+  color: white;
+  background: transparent;
+}
+
+.hra-projects-cta-secondary:hover {
+  color: var(--projects-dark);
+  background: white;
+  border-color: white;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1050px) {
+  .hra-projects-intro-grid,
+  .hra-projects-feature-grid {
+    gap: 45px;
+  }
+
+  .hra-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hra-projects-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .hra-projects-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .hra-projects-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .hra-projects-intro-grid,
+  .hra-projects-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hra-projects-intro-image > img {
+    height: 350px;
+  }
+
+  .hra-projects-image-caption {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .hra-projects-feature-image > img {
+    height: 350px;
+  }
+
+  .hra-projects-feature-stats {
+    right: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hra-projects-grid,
+  .hra-projects-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hra-project-card-content > p {
+    min-height: auto;
+  }
+
+  .hra-projects-intro-content h2,
+  .hra-projects-feature-content h2 {
+    font-size: 32px;
+  }
+
+  .hra-projects-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .hra-projects-feature-stats {
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .hra-projects-feature-stats strong {
+    font-size: 31px;
+  }
+
+  .hra-projects-cta-actions {
+    flex-direction: column;
+  }
+
+  .hra-projects-cta-primary,
+  .hra-projects-cta-secondary {
+    width: 100%;
+  }
+}

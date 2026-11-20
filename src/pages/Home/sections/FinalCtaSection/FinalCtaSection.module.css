@@ -1,0 +1,135 @@
+/* =========================================
+   HRA FINAL CALL-TO-ACTION BANNER
+========================================= */
+
+.section {
+  position: relative;
+  padding: 112px 0;
+  background-color: #0b392918;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.inner {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================================
+   TYPOGRAPHY & COPY
+========================================= */
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(234, 243, 237, 0.14);
+  border: 1px solid rgba(234, 243, 237, 0.25);
+  color: #EAF3ED;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(32px, 4.2vw, 46px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.8px;
+}
+
+.section p {
+  margin: 0 auto 16px;
+  max-width: 680px;
+  color: #EAF3ED;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section p:last-of-type {
+  margin-bottom: 32px;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background: #17643F;
+  border: 1px solid #17643F;
+  color: #FFFFFF;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.primaryButton:hover {
+  background: #145B3B;
+  border-color: #247749;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(234, 243, 237, 0.45);
+  color: #FFFFFF;
+}
+
+.secondaryButton:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #103D2A;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+========================================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .section p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}

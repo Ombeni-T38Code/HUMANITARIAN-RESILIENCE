@@ -1,0 +1,741 @@
+
+/* =========================================
+   CHILDCARE & LEARNING PROJECT
+========================================= */
+
+.childcare-learning-page {
+  --cl-green: #145b3b;
+  --cl-dark: #0b3828;
+  --cl-gold: #d5a642;
+  --cl-cream: #f8f7f1;
+  --cl-text: #59645d;
+  --cl-heading: #173d2d;
+
+  color: var(--cl-heading);
+  overflow: hidden;
+}
+
+.cl-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.childcare-learning-page .section-padding {
+  padding: 100px 0;
+}
+
+.cl-label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--cl-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* INTRODUCTION */
+
+.cl-intro {
+  background: white;
+}
+
+.cl-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cl-intro-image {
+  position: relative;
+}
+
+.cl-intro-image > img {
+  display: block;
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.cl-image-card {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 310px;
+  padding: 20px 23px;
+  color: white;
+  background: var(--cl-green);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.cl-image-card svg {
+  flex-shrink: 0;
+  color: var(--cl-gold);
+}
+
+.cl-image-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cl-image-card strong {
+  font-size: 15px;
+}
+
+.cl-image-card span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.cl-intro-content h2,
+.cl-importance-content h2,
+.cl-activities-content h2,
+.cl-objectives-content h2 {
+  margin: 0 0 22px;
+  color: var(--cl-dark);
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.cl-intro-content h2 span,
+.cl-importance-content h2 span {
+  color: var(--cl-green);
+}
+
+.cl-intro-content p,
+.cl-importance-content > p,
+.cl-activities-content > p,
+.cl-objectives-content > p {
+  margin: 0 0 17px;
+  color: var(--cl-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.cl-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 15px;
+  padding: 15px 23px;
+  color: white;
+  background: var(--cl-green);
+  border: 1px solid var(--cl-green);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cl-primary-btn:hover {
+  color: var(--cl-dark);
+  background: var(--cl-gold);
+  border-color: var(--cl-gold);
+  transform: translateY(-3px);
+}
+
+/* IMPORTANCE */
+
+.cl-importance {
+  background: var(--cl-cream);
+}
+
+.cl-importance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cl-importance-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cl-importance-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--cl-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cl-importance-points svg {
+  flex-shrink: 0;
+  color: var(--cl-green);
+}
+
+.cl-importance-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+/* SECTION HEADING */
+
+.cl-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.cl-section-heading h2 {
+  margin: 0 0 17px;
+  color: var(--cl-dark);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.cl-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--cl-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* FOCUS AREAS */
+
+.cl-focus {
+  background: white;
+}
+
+.cl-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.cl-focus-card {
+  position: relative;
+  min-height: 270px;
+  padding: 32px 28px;
+  overflow: hidden;
+  background: var(--cl-cream);
+  border: 1px solid #e9ece7;
+  border-radius: 10px;
+  transition: 0.35s ease;
+}
+
+.cl-focus-card:hover {
+  background: white;
+  border-color: var(--cl-gold);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(15, 59, 40, 0.08);
+}
+
+.cl-focus-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #e3eae3;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.cl-focus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 25px;
+  color: var(--cl-green);
+  background: white;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.cl-focus-card:hover .cl-focus-icon {
+  color: white;
+  background: var(--cl-green);
+}
+
+.cl-focus-card h3 {
+  margin: 0 0 12px;
+  color: var(--cl-dark);
+  font-size: 19px;
+}
+
+.cl-focus-card p {
+  margin: 0;
+  color: var(--cl-text);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.cl-focus-line {
+  width: 35px;
+  height: 3px;
+  margin-top: 22px;
+  background: var(--cl-gold);
+  transition: width 0.3s ease;
+}
+
+.cl-focus-card:hover .cl-focus-line {
+  width: 75px;
+}
+
+/* ACTIVITIES */
+
+.cl-activities {
+  background: var(--cl-cream);
+}
+
+.cl-activities-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cl-activities-image img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.cl-activity-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.cl-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.cl-activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: var(--cl-green);
+  background: white;
+  border-radius: 9px;
+}
+
+.cl-activity-item h3 {
+  margin: 0 0 7px;
+  color: var(--cl-dark);
+  font-size: 16px;
+}
+
+.cl-activity-item p {
+  margin: 0;
+  color: var(--cl-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* APPROACH */
+
+.cl-approach {
+  background: white;
+}
+
+.cl-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cl-approach-card {
+  position: relative;
+  padding: 30px 24px;
+  background: var(--cl-cream);
+  border: 1px solid #e9ece7;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.cl-approach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(15, 59, 40, 0.07);
+}
+
+.cl-approach-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e3eae3;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.cl-approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  color: var(--cl-green);
+  background: white;
+  border-radius: 50%;
+}
+
+.cl-approach-card h3 {
+  margin: 0 0 12px;
+  color: var(--cl-dark);
+  font-size: 17px;
+}
+
+.cl-approach-card p {
+  margin: 0;
+  color: var(--cl-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* OBJECTIVES */
+
+.cl-objectives {
+  background: var(--cl-cream);
+}
+
+.cl-objectives-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.cl-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--cl-green);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cl-text-link:hover {
+  color: #b18426;
+}
+
+.cl-objectives-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.cl-objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 78px;
+  padding: 18px;
+  background: white;
+  border-radius: 7px;
+}
+
+.cl-objective-item svg {
+  flex-shrink: 0;
+  color: var(--cl-green);
+}
+
+.cl-objective-item span {
+  color: var(--cl-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* CHILD-CENTRED MESSAGE */
+
+.cl-message {
+  background: white;
+}
+
+.cl-message-inner {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 65px 45px;
+  text-align: center;
+  background: var(--cl-cream);
+  border-radius: 14px;
+}
+
+.cl-message-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 23px;
+  color: var(--cl-dark);
+  background: var(--cl-gold);
+  border-radius: 50%;
+}
+
+.cl-message-inner > span {
+  color: var(--cl-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cl-message-inner h2 {
+  max-width: 650px;
+  margin: 18px auto;
+  color: var(--cl-dark);
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.2;
+}
+
+.cl-message-inner > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--cl-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.cl-message-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 27px;
+  color: var(--cl-green);
+}
+
+.cl-message-decoration span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cl-message-decoration svg {
+  color: var(--cl-gold);
+}
+
+/* CALL TO ACTION */
+
+.cl-cta {
+  color: white;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 48, 32, 0.97),
+      rgba(20, 91, 59, 0.93)
+    ),
+    url("https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+}
+
+.cl-cta-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cl-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  color: var(--cl-dark);
+  background: var(--cl-gold);
+  border-radius: 50%;
+}
+
+.cl-cta-content > span {
+  color: var(--cl-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cl-cta-content h2 {
+  margin: 18px 0;
+  color: white;
+  font-size: clamp(30px, 4.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.cl-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.cl-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.cl-cta-primary,
+.cl-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid var(--cl-gold);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cl-cta-primary {
+  color: var(--cl-dark);
+  background: var(--cl-gold);
+}
+
+.cl-cta-primary:hover {
+  color: white;
+  background: transparent;
+}
+
+.cl-cta-secondary {
+  color: white;
+  background: transparent;
+}
+
+.cl-cta-secondary:hover {
+  color: var(--cl-dark);
+  background: white;
+  border-color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .cl-intro-grid,
+  .cl-importance-grid,
+  .cl-activities-grid {
+    gap: 45px;
+  }
+
+  .cl-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cl-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cl-objectives-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  .childcare-learning-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .cl-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .cl-intro-grid,
+  .cl-importance-grid,
+  .cl-activities-grid,
+  .cl-objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .cl-intro-image > img,
+  .cl-importance-image img {
+    height: 350px;
+  }
+
+  .cl-activities-image img {
+    height: 380px;
+  }
+
+  .cl-image-card {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .cl-objectives-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .cl-focus-grid,
+  .cl-approach-grid,
+  .cl-objectives-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cl-focus-card {
+    min-height: auto;
+  }
+
+  .cl-intro-content h2,
+  .cl-importance-content h2,
+  .cl-activities-content h2,
+  .cl-objectives-content h2 {
+    font-size: 31px;
+  }
+
+  .cl-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .cl-message-inner {
+    padding: 45px 22px;
+  }
+
+  .cl-message-inner h2 {
+    font-size: 30px;
+  }
+
+  .cl-message-decoration {
+    gap: 7px;
+  }
+
+  .cl-message-decoration span {
+    font-size: 11px;
+  }
+
+  .cl-cta-actions {
+    flex-direction: column;
+  }
+
+  .cl-cta-primary,
+  .cl-cta-secondary {
+    width: 100%;
+  }
+}

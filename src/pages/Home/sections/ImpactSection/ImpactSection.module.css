@@ -1,0 +1,116 @@
+/* =========================================
+   HRA IMPACT SECTION
+========================================= */
+
+.section {
+  background: #F8FAF8;
+  padding: 96px 0;
+}
+
+.heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #EDF5EF;
+  color: #17643F;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  margin: 0 0 14px;
+  color: #183A28;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.6px;
+}
+
+.heading p {
+  margin: 0;
+  color: #68756B;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   IMPACT CARDS GRID
+========================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 28px 24px;
+  background: #FFFFFF;
+  border: 1px solid #EAF3ED;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px -12px rgba(24, 58, 40, 0.08);
+  text-align: left;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: #EDF5EF;
+  color: #17643F;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  color: #183A28;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.card p {
+  margin: 0;
+  color: #68756B;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+========================================= */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 68px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 22px 20px;
+  }
+}

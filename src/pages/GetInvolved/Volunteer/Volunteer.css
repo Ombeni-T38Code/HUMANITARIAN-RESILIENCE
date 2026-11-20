@@ -1,0 +1,819 @@
+
+/* =========================================
+   VOLUNTEER PAGE
+========================================= */
+
+.vol-page {
+  --vol-green: #145b3b;
+  --vol-dark: #103d2b;
+  --vol-gold: #d9a441;
+  --vol-cream: #f8f7f1;
+  --vol-text: #59645d;
+
+  overflow: hidden;
+  background: #ffffff;
+  color: var(--vol-dark);
+}
+
+.vol-container {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.vol-page .section-padding {
+  padding: 100px 0;
+}
+
+.vol-eyebrow {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--vol-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.vol-page h2 {
+  margin: 0 0 22px;
+  color: var(--vol-dark);
+  font-size: clamp(30px, 4vw, 45px);
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: -1.4px;
+}
+
+.vol-page h2 span {
+  color: var(--vol-green);
+}
+
+.vol-page p {
+  color: var(--vol-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.vol-intro {
+  background: #ffffff;
+}
+
+.vol-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.vol-intro-content p {
+  margin-bottom: 16px;
+}
+
+.vol-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.vol-primary-btn,
+.vol-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 49px;
+  padding: 14px 21px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.vol-primary-btn {
+  background: var(--vol-green);
+  color: #ffffff;
+}
+
+.vol-primary-btn:hover {
+  background: var(--vol-dark);
+  transform: translateY(-3px);
+}
+
+.vol-secondary-btn {
+  border: 1px solid var(--vol-green);
+  color: var(--vol-green);
+}
+
+.vol-secondary-btn:hover {
+  background: var(--vol-green);
+  color: #ffffff;
+}
+
+.vol-intro-visual {
+  position: relative;
+}
+
+.vol-intro-visual > img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.vol-floating-card {
+  position: absolute;
+  right: -25px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 310px;
+  padding: 20px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.13);
+}
+
+.vol-floating-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border-radius: 6px;
+  background: #eaf3ed;
+  color: var(--vol-green);
+}
+
+.vol-floating-card strong,
+.vol-floating-card span {
+  display: block;
+}
+
+.vol-floating-card strong {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.vol-floating-card span {
+  color: #737d76;
+  font-size: 12px;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.vol-section-heading {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.vol-section-heading h2 {
+  margin-bottom: 15px;
+}
+
+.vol-section-heading p {
+  margin: 0;
+}
+
+/* =========================================
+   WHY VOLUNTEER
+========================================= */
+
+.vol-why {
+  background: var(--vol-cream);
+}
+
+.vol-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19px;
+}
+
+.vol-why-card {
+  padding: 30px 24px;
+  border: 1px solid #e8e9e1;
+  border-radius: 7px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.vol-why-card:hover {
+  border-color: var(--vol-green);
+  box-shadow: 0 13px 35px rgba(20, 91, 59, 0.08);
+  transform: translateY(-6px);
+}
+
+.vol-why-icon {
+  display: grid;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 25px;
+  place-items: center;
+  border-radius: 7px;
+  background: #eaf3ed;
+  color: var(--vol-green);
+}
+
+.vol-why-card h3 {
+  margin: 0 0 12px;
+  color: var(--vol-dark);
+  font-size: 18px;
+}
+
+.vol-why-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =========================================
+   VOLUNTEER AREAS
+========================================= */
+
+.vol-areas {
+  background: #ffffff;
+}
+
+.vol-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.vol-area-card {
+  padding: 30px;
+  border: 1px solid #e9eee9;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.vol-area-card:hover {
+  border-color: var(--vol-green);
+  box-shadow: 0 14px 35px rgba(20, 91, 59, 0.08);
+  transform: translateY(-5px);
+}
+
+.vol-area-icon {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 23px;
+  place-items: center;
+  border-radius: 7px;
+  background: #eaf3ed;
+  color: var(--vol-green);
+}
+
+.vol-area-card h3 {
+  margin: 0 0 12px;
+  color: var(--vol-dark);
+  font-size: 19px;
+}
+
+.vol-area-card p {
+  min-height: 95px;
+  margin: 0 0 20px;
+  font-size: 13px;
+}
+
+.vol-area-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--vol-green);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.vol-area-link:hover {
+  gap: 14px;
+  color: #a8751e;
+}
+
+/* =========================================
+   VOLUNTEER EXPERIENCE
+========================================= */
+
+.vol-experience {
+  background: var(--vol-cream);
+}
+
+.vol-experience-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.vol-experience-image {
+  position: relative;
+}
+
+.vol-experience-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.vol-image-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 18px;
+  border-radius: 5px;
+  background: var(--vol-green);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.vol-experience-content p {
+  margin-bottom: 15px;
+}
+
+.vol-qualities-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.vol-qualities-list div {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: var(--vol-dark);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+.vol-qualities-list svg {
+  flex-shrink: 0;
+  color: var(--vol-green);
+}
+
+/* =========================================
+   VOLUNTEER STEPS
+========================================= */
+
+.vol-steps {
+  background: #ffffff;
+}
+
+.vol-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.vol-step-card {
+  padding: 29px 23px;
+  border: 1px solid #e8eee8;
+  border-radius: 7px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.vol-step-card:hover {
+  border-color: var(--vol-green);
+  box-shadow: 0 12px 30px rgba(20, 91, 59, 0.07);
+  transform: translateY(-5px);
+}
+
+.vol-step-number {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--vol-gold);
+  font-size: 32px;
+  font-weight: 850;
+}
+
+.vol-step-card h3 {
+  margin: 0 0 13px;
+  color: var(--vol-dark);
+  font-size: 18px;
+}
+
+.vol-step-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =========================================
+   EXPECTATIONS
+========================================= */
+
+.vol-expectations {
+  background: var(--vol-cream);
+}
+
+.vol-expectations-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.vol-expectations-content > p {
+  margin-bottom: 25px;
+}
+
+.vol-expectation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 21px;
+}
+
+.vol-expectation-item > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--vol-green);
+}
+
+.vol-expectation-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--vol-dark);
+  font-size: 14px;
+}
+
+.vol-expectation-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.vol-expectations-image img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* =========================================
+   APPLICATION CTA
+========================================= */
+
+.vol-application {
+  background: #ffffff;
+}
+
+.vol-application-box {
+  position: relative;
+  padding: 75px 55px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--vol-green);
+  text-align: center;
+}
+
+.vol-application-box::before,
+.vol-application-box::after {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.vol-application-box::before {
+  top: -190px;
+  left: -100px;
+}
+
+.vol-application-box::after {
+  right: -100px;
+  bottom: -210px;
+}
+
+.vol-application-icon {
+  display: grid;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.13);
+  color: var(--vol-gold);
+}
+
+.vol-application-eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--vol-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.vol-application-box h2 {
+  max-width: 680px;
+  margin: 0 auto 18px;
+  color: #ffffff;
+}
+
+.vol-application-box > p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.vol-application-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.vol-apply-btn,
+.vol-call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 49px;
+  padding: 14px 22px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.vol-apply-btn {
+  background: var(--vol-gold);
+  color: var(--vol-dark);
+}
+
+.vol-apply-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+.vol-call-btn {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: #ffffff;
+}
+
+.vol-call-btn:hover {
+  background: #ffffff;
+  color: var(--vol-green);
+  transform: translateY(-3px);
+}
+
+.vol-contact-details {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.vol-contact-details span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.vol-bottom-cta {
+  padding: 48px 0;
+  background: var(--vol-dark);
+}
+
+.vol-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.vol-bottom-content span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--vol-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.vol-bottom-content h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(23px, 3vw, 32px);
+}
+
+.vol-bottom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 21px;
+  border-radius: 5px;
+  background: var(--vol-gold);
+  color: var(--vol-dark);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.vol-bottom-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+  .vol-intro-grid,
+  .vol-experience-grid,
+  .vol-expectations-grid {
+    gap: 40px;
+  }
+
+  .vol-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vol-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .vol-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .vol-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .vol-intro-grid,
+  .vol-experience-grid,
+  .vol-expectations-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .vol-intro-visual > img,
+  .vol-experience-image img,
+  .vol-expectations-image img {
+    height: 350px;
+  }
+
+  .vol-floating-card {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .vol-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vol-area-card {
+    padding: 24px;
+  }
+
+  .vol-area-card p {
+    min-height: auto;
+  }
+
+  .vol-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .vol-application-box {
+    padding: 55px 24px;
+  }
+
+  .vol-bottom-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .vol-page .section-padding {
+    padding: 58px 0;
+  }
+
+  .vol-page h2 {
+    font-size: 30px;
+    letter-spacing: -0.8px;
+  }
+
+  .vol-why-grid,
+  .vol-areas-grid,
+  .vol-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vol-intro-visual > img,
+  .vol-experience-image img,
+  .vol-expectations-image img {
+    height: 280px;
+  }
+
+  .vol-floating-card {
+    right: 8px;
+    bottom: 10px;
+    padding: 13px;
+  }
+
+  .vol-floating-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .vol-intro-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vol-primary-btn,
+  .vol-secondary-btn {
+    width: 100%;
+  }
+
+  .vol-image-caption {
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
+    font-size: 11px;
+  }
+
+  .vol-application-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vol-apply-btn,
+  .vol-call-btn {
+    width: 100%;
+  }
+
+  .vol-contact-details {
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .vol-bottom-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .vol-page *,
+  .vol-page *::before,
+  .vol-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,736 @@
+
+/* =========================================
+   COMMUNITY PHYSIOTHERAPY PROJECT
+========================================= */
+
+.community-physiotherapy-page {
+  --cp-green: #145b3b;
+  --cp-dark: #0b3828;
+  --cp-gold: #d5a642;
+  --cp-cream: #f8f7f1;
+  --cp-text: #59645d;
+  --cp-heading: #173d2d;
+
+  color: var(--cp-heading);
+  overflow: hidden;
+}
+
+.cp-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.community-physiotherapy-page .section-padding {
+  padding: 100px 0;
+}
+
+.cp-label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--cp-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* INTRODUCTION */
+
+.cp-intro {
+  background: white;
+}
+
+.cp-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cp-intro-image {
+  position: relative;
+}
+
+.cp-intro-image > img {
+  display: block;
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.cp-image-card {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 310px;
+  padding: 20px 23px;
+  color: white;
+  background: var(--cp-green);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.cp-image-card svg {
+  flex-shrink: 0;
+  color: var(--cp-gold);
+}
+
+.cp-image-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cp-image-card strong {
+  font-size: 15px;
+}
+
+.cp-image-card span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.cp-intro-content h2,
+.cp-why-content h2,
+.cp-goals-content h2,
+.cp-history-content h2,
+.cp-related-content h2 {
+  margin: 0 0 22px;
+  color: var(--cp-dark);
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.cp-intro-content h2 span,
+.cp-why-content h2 span {
+  color: var(--cp-green);
+}
+
+.cp-intro-content p,
+.cp-why-content > p,
+.cp-goals-content > p,
+.cp-history-content > p,
+.cp-related-content > p {
+  margin: 0 0 17px;
+  color: var(--cp-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.cp-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 15px;
+  padding: 15px 23px;
+  color: white;
+  background: var(--cp-green);
+  border: 1px solid var(--cp-green);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cp-primary-btn:hover {
+  color: var(--cp-dark);
+  background: var(--cp-gold);
+  border-color: var(--cp-gold);
+  transform: translateY(-3px);
+}
+
+/* SECTION HEADING */
+
+.cp-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.cp-section-heading h2 {
+  margin: 0 0 17px;
+  color: var(--cp-dark);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.cp-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--cp-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+
+.cp-services {
+  background: var(--cp-cream);
+}
+
+.cp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.cp-service-card {
+  position: relative;
+  min-height: 270px;
+  padding: 32px 28px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 10px;
+  transition: 0.35s ease;
+}
+
+.cp-service-card:hover {
+  border-color: var(--cp-gold);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(15, 59, 40, 0.08);
+}
+
+.cp-service-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #e9eee9;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.cp-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 25px;
+  color: var(--cp-green);
+  background: #edf5ef;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.cp-service-card:hover .cp-service-icon {
+  color: white;
+  background: var(--cp-green);
+}
+
+.cp-service-card h3 {
+  margin: 0 0 12px;
+  color: var(--cp-dark);
+  font-size: 19px;
+}
+
+.cp-service-card p {
+  margin: 0;
+  color: var(--cp-text);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.cp-service-line {
+  width: 35px;
+  height: 3px;
+  margin-top: 22px;
+  background: var(--cp-gold);
+  transition: width 0.3s ease;
+}
+
+.cp-service-card:hover .cp-service-line {
+  width: 75px;
+}
+
+/* WHY REHABILITATION */
+
+.cp-why {
+  background: white;
+}
+
+.cp-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cp-why-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cp-why-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--cp-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cp-why-points svg {
+  flex-shrink: 0;
+  color: var(--cp-green);
+}
+
+.cp-why-image {
+  position: relative;
+  padding-bottom: 45px;
+}
+
+.cp-why-image > img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.cp-image-note {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(330px, 90%);
+  padding: 20px;
+  color: white;
+  background: var(--cp-dark);
+  border-radius: 9px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+.cp-image-note svg {
+  flex-shrink: 0;
+  color: var(--cp-gold);
+}
+
+.cp-image-note div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cp-image-note strong {
+  font-size: 14px;
+}
+
+.cp-image-note span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+}
+
+/* APPROACH */
+
+.cp-approach {
+  background: var(--cp-cream);
+}
+
+.cp-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cp-approach-card {
+  position: relative;
+  padding: 30px 24px;
+  background: white;
+  border: 1px solid #e9ece7;
+  border-radius: 9px;
+  transition: 0.3s ease;
+}
+
+.cp-approach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(15, 59, 40, 0.07);
+}
+
+.cp-approach-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e8eee9;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.cp-approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  color: var(--cp-green);
+  background: #edf5ef;
+  border-radius: 50%;
+}
+
+.cp-approach-card h3 {
+  margin: 0 0 12px;
+  color: var(--cp-dark);
+  font-size: 17px;
+}
+
+.cp-approach-card p {
+  margin: 0;
+  color: var(--cp-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* GOALS */
+
+.cp-goals {
+  background: white;
+}
+
+.cp-goals-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.cp-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--cp-green);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cp-text-link:hover {
+  color: #b18426;
+}
+
+.cp-goals-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.cp-goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 78px;
+  padding: 18px;
+  background: var(--cp-cream);
+  border-radius: 7px;
+}
+
+.cp-goal-item svg {
+  flex-shrink: 0;
+  color: var(--cp-green);
+}
+
+.cp-goal-item span {
+  color: var(--cp-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* HISTORICAL EXPERIENCE */
+
+.cp-history {
+  background: var(--cp-cream);
+}
+
+.cp-history-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cp-history-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.cp-history-content h2 {
+  font-size: clamp(29px, 3.5vw, 39px);
+}
+
+.cp-history-highlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.cp-history-highlight div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 18px 12px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.cp-history-highlight strong {
+  color: var(--cp-green);
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.cp-history-highlight span {
+  color: var(--cp-text);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* RELATED PROGRAM */
+
+.cp-related {
+  background: white;
+}
+
+.cp-related-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.cp-related-content h2 {
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.cp-related-image img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+/* CALL TO ACTION */
+
+.cp-cta {
+  color: white;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 48, 32, 0.97),
+      rgba(20, 91, 59, 0.93)
+    ),
+    url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+}
+
+.cp-cta-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cp-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  color: var(--cp-dark);
+  background: var(--cp-gold);
+  border-radius: 50%;
+}
+
+.cp-cta-content > span {
+  color: var(--cp-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cp-cta-content h2 {
+  margin: 18px 0;
+  color: white;
+  font-size: clamp(30px, 4.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.cp-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.cp-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.cp-cta-primary,
+.cp-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid var(--cp-gold);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cp-cta-primary {
+  color: var(--cp-dark);
+  background: var(--cp-gold);
+}
+
+.cp-cta-primary:hover {
+  color: white;
+  background: transparent;
+}
+
+.cp-cta-secondary {
+  color: white;
+  background: transparent;
+}
+
+.cp-cta-secondary:hover {
+  color: var(--cp-dark);
+  background: white;
+  border-color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+  .cp-intro-grid,
+  .cp-why-grid,
+  .cp-history-grid,
+  .cp-related-grid {
+    gap: 45px;
+  }
+
+  .cp-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cp-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cp-goals-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  .community-physiotherapy-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .cp-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .cp-intro-grid,
+  .cp-why-grid,
+  .cp-goals-grid,
+  .cp-history-grid,
+  .cp-related-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .cp-intro-image > img,
+  .cp-why-image > img,
+  .cp-history-image img,
+  .cp-related-image img {
+    height: 350px;
+  }
+
+  .cp-image-card {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .cp-image-note {
+    right: 10px;
+  }
+
+  .cp-goals-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .cp-services-grid,
+  .cp-approach-grid,
+  .cp-goals-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-service-card {
+    min-height: auto;
+  }
+
+  .cp-intro-content h2,
+  .cp-why-content h2,
+  .cp-goals-content h2,
+  .cp-history-content h2,
+  .cp-related-content h2 {
+    font-size: 31px;
+  }
+
+  .cp-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .cp-history-highlight {
+    gap: 8px;
+  }
+
+  .cp-history-highlight div {
+    padding: 15px 8px;
+  }
+
+  .cp-history-highlight strong {
+    font-size: 23px;
+  }
+
+  .cp-cta-actions {
+    flex-direction: column;
+  }
+
+  .cp-cta-primary,
+  .cp-cta-secondary {
+    width: 100%;
+  }
+}

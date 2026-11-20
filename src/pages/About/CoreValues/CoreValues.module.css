@@ -1,0 +1,139 @@
+.section {
+  padding: 110px 0;
+  background: #fff;
+}
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.heading {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.heading > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 20px;
+  color: #145b3b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.heading > span::before {
+  width: 30px;
+  height: 2px;
+  background: #d9aa57;
+  content: '';
+}
+
+.heading h2 {
+  margin: 0 0 18px;
+  color: #17231c;
+  font: 700 clamp(36px, 4.7vw, 56px)/1.13 'Playfair Display', Georgia, serif;
+}
+
+.heading h2 em {
+  color: #145b3b;
+  font-style: normal;
+}
+
+.heading p {
+  color: #68766e;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 25px;
+  border: 1px solid #e5eae5;
+  border-radius: 20px;
+  background: #fff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.card::after {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #eaf3ed;
+  content: '';
+  transition: transform 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #b6d77d;
+  box-shadow: 0 22px 65px rgba(8, 45, 28, 0.1);
+}
+
+.card:hover::after {
+  transform: scale(1.6);
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 25px;
+  place-items: center;
+  border-radius: 17px;
+  background: #eaf3ed;
+  color: #145b3b;
+}
+
+.card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 11px;
+  color: #0b3d29;
+  font-size: 17px;
+}
+
+.card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #68766e;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

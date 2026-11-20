@@ -1,0 +1,628 @@
+
+.psychosocial-page {
+  --psy-green: #145b3b;
+  --psy-dark: #0b3828;
+  --psy-gold: #d5a642;
+  --psy-cream: #f8f7f1;
+  --psy-text: #59665e;
+  color: var(--psy-dark);
+  overflow: hidden;
+}
+
+.psy-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.psychosocial-page .section-padding {
+  padding: 100px 0;
+}
+
+.psychosocial-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psychosocial-page h2 {
+  color: var(--psy-dark);
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 0 0 20px;
+}
+
+.psychosocial-page h2 span {
+  color: var(--psy-green);
+}
+
+.psychosocial-page p {
+  color: var(--psy-text);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.psy-label {
+  display: inline-block;
+  color: var(--psy-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.psy-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 16px 23px;
+  margin-top: 18px;
+  border-radius: 5px;
+  background: var(--psy-green);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 750;
+  transition: 0.3s ease;
+}
+
+.psy-primary-btn:hover {
+  background: var(--psy-dark);
+  transform: translateY(-3px);
+}
+
+/* INTRO */
+
+.psy-intro {
+  background: #fff;
+}
+
+.psy-intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.psy-intro-image {
+  height: 510px;
+  position: relative;
+}
+
+.psy-intro-image > img {
+  border-radius: 8px;
+}
+
+.psy-image-card {
+  position: absolute;
+  right: -25px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 310px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 45px rgba(11, 56, 40, 0.13);
+}
+
+.psy-image-card-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: grid;
+  place-items: center;
+  background: #f6f0df;
+  color: var(--psy-green);
+  border-radius: 50%;
+}
+
+.psy-image-card strong {
+  font-size: 14px;
+  color: var(--psy-dark);
+}
+
+.psy-image-card p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 5px 0 0;
+}
+
+.psy-intro-content > p {
+  margin: 0 0 15px;
+}
+
+/* HEADINGS */
+
+.psy-heading {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto 55px;
+}
+
+.psy-heading p {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* SUPPORT AREAS */
+
+.psy-areas {
+  background: var(--psy-cream);
+}
+
+.psy-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.psy-area-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 35px 30px 40px;
+  border: 1px solid #e9ece6;
+  border-radius: 8px;
+  transition: 0.35s ease;
+}
+
+.psy-area-card:hover {
+  transform: translateY(-7px);
+  border-color: #d7c28c;
+  box-shadow: 0 18px 45px rgba(11, 56, 40, 0.09);
+}
+
+.psy-area-number {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  color: #e8e9e1;
+  font-size: 35px;
+  font-weight: 850;
+}
+
+.psy-area-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+  color: var(--psy-green);
+  background: #edf4ee;
+  border-radius: 8px;
+}
+
+.psy-area-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.psy-area-card h3 {
+  color: var(--psy-dark);
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+
+.psy-area-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.psy-area-bottom-line {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 45px;
+  height: 3px;
+  background: var(--psy-gold);
+  transition: 0.3s ease;
+}
+
+.psy-area-card:hover .psy-area-bottom-line {
+  width: calc(100% - 60px);
+}
+
+/* IMPORTANCE */
+
+.psy-importance {
+  background: #fff;
+}
+
+.psy-importance-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.psy-importance-content > p {
+  margin-bottom: 15px;
+}
+
+.psy-importance-points {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.psy-importance-points > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--psy-dark);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.psy-importance-points svg {
+  min-width: 20px;
+  color: var(--psy-green);
+}
+
+.psy-importance-image {
+  height: 490px;
+  position: relative;
+}
+
+.psy-importance-image > img {
+  border-radius: 8px;
+}
+
+.psy-quote-card {
+  position: absolute;
+  left: -25px;
+  bottom: 28px;
+  width: min(320px, 90%);
+  padding: 22px 25px;
+  background: var(--psy-green);
+  border-radius: 7px;
+}
+
+.psy-quote-card > span {
+  display: block;
+  color: var(--psy-gold);
+  font-family: Georgia, serif;
+  font-size: 45px;
+  line-height: 0.8;
+}
+
+.psy-quote-card p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.65;
+  margin: 8px 0 0;
+}
+
+/* APPROACH */
+
+.psy-approach {
+  background: var(--psy-cream);
+}
+
+.psy-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.psy-approach-card {
+  background: #fff;
+  border: 1px solid #e9ece6;
+  border-radius: 7px;
+  padding: 30px 24px;
+  transition: 0.3s ease;
+}
+
+.psy-approach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(11, 56, 40, 0.08);
+}
+
+.psy-approach-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  color: var(--psy-green);
+  background: #edf4ee;
+  border-radius: 8px;
+}
+
+.psy-approach-card h3 {
+  color: var(--psy-dark);
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+.psy-approach-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* PRINCIPLES */
+
+.psy-principles {
+  background: #fff;
+}
+
+.psy-principles-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+}
+
+.psy-principles-heading {
+  align-self: start;
+  position: sticky;
+  top: 120px;
+}
+
+.psy-principles-list {
+  display: grid;
+  gap: 12px;
+}
+
+.psy-principle-item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 18px 20px;
+  background: var(--psy-cream);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.psy-principle-item:hover {
+  transform: translateX(5px);
+}
+
+.psy-principle-item > span {
+  color: var(--psy-gold);
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.psy-principle-item p {
+  flex: 1;
+  margin: 0;
+  color: var(--psy-dark);
+  font-size: 14px;
+}
+
+.psy-principle-item > svg {
+  color: var(--psy-green);
+  min-width: 19px;
+}
+
+/* PROJECT */
+
+.psy-project {
+  background: var(--psy-cream);
+}
+
+.psy-project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.psy-project-image {
+  height: 400px;
+}
+
+.psy-project-image img {
+  border-radius: 8px;
+}
+
+.psy-project-content p {
+  max-width: 520px;
+}
+
+/* CTA */
+
+.psy-cta {
+  padding: 95px 0;
+  text-align: center;
+  background:
+    linear-gradient(110deg, rgba(7, 43, 29, 0.96), rgba(20, 91, 59, 0.94)),
+    url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1800&q=85")
+      center/cover;
+}
+
+.psy-cta-content {
+  max-width: 780px;
+}
+
+.psy-cta-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 23px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--psy-gold);
+  border-radius: 50%;
+}
+
+.psy-cta .psy-label {
+  color: var(--psy-gold);
+}
+
+.psy-cta h2 {
+  color: #fff;
+}
+
+.psy-cta p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.psy-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.psy-cta-light,
+.psy-cta-outline {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 23px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 750;
+  transition: 0.3s ease;
+}
+
+.psy-cta-light {
+  color: var(--psy-dark);
+  background: #fff;
+}
+
+.psy-cta-outline {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.psy-cta-light:hover,
+.psy-cta-outline:hover {
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .psy-intro-grid,
+  .psy-importance-grid {
+    gap: 45px;
+  }
+
+  .psy-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .psy-principles-grid {
+    gap: 45px;
+  }
+
+  .psy-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .psychosocial-page .section-padding {
+    padding: 70px 0;
+  }
+
+  .psy-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .psy-intro-grid,
+  .psy-importance-grid,
+  .psy-principles-grid,
+  .psy-project-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .psy-intro-image,
+  .psy-importance-image {
+    height: 390px;
+  }
+
+  .psy-image-card {
+    right: 12px;
+    bottom: 15px;
+  }
+
+  .psy-quote-card {
+    left: 12px;
+    bottom: 15px;
+  }
+
+  .psy-principles-heading {
+    position: static;
+  }
+
+  .psy-project-image {
+    height: 330px;
+  }
+
+  .psy-heading {
+    margin-bottom: 38px;
+  }
+
+  .psy-cta {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .psychosocial-page .section-padding {
+    padding: 58px 0;
+  }
+
+  .psychosocial-page h2 {
+    font-size: 32px;
+  }
+
+  .psy-areas-grid,
+  .psy-approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .psy-area-card {
+    padding: 28px 24px 35px;
+  }
+
+  .psy-intro-image,
+  .psy-importance-image {
+    height: 310px;
+  }
+
+  .psy-image-card {
+    max-width: 270px;
+    padding: 14px;
+  }
+
+  .psy-principle-item {
+    gap: 11px;
+    padding: 15px;
+  }
+
+  .psy-principle-item p {
+    font-size: 13px;
+  }
+
+  .psy-project-image {
+    height: 270px;
+  }
+
+  .psy-cta-actions {
+    flex-direction: column;
+  }
+
+  .psy-cta-light,
+  .psy-cta-outline {
+    width: 100%;
+  }
+}
